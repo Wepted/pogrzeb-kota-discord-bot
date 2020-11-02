@@ -1,7 +1,7 @@
 # pogrzeb-kota-discord-bot
 
 
-#required modules
+#if you want to install the modules yourself, the commands are below
 npm install discord.js @discordjs/opus ffmpeg-static
 
 
