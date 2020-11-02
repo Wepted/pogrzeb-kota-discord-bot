@@ -2,7 +2,7 @@
 
 
 
-**if you want to install the modules yourself, the commands are below**
+**Modules**
 
 npm install discord.js @discordjs/opus ffmpeg-static
 
@@ -15,12 +15,18 @@ node bot.js
 **Installation**
 ```
 Ubuntu
+**if you don't have node js{
 apt install nodejs
 apt install npm
+}**
 git clone https://github.com/Wepted/pogrzeb-kota-discord-bot.git
+cd pogrzeb-kota-discord-bot
+npm install discord.js @discordjs/opus ffmpeg-static
 ```
 ```
 Windows
 
 https://nodejs.org/en/
+git clone https://github.com/Wepted/pogrzeb-kota-discord-bot.git
+npm install discord.js @discordjs/opus ffmpeg-static
 ```
