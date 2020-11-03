@@ -1,8 +1,9 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const broadcast = client.voice.createBroadcast();
-
 broadcast.play('pogrzeb.mp3');
+
+
 
 client.on('message', async message => {
     if (!message.guild) return;
@@ -19,4 +20,5 @@ client.on('message', async message => {
     }
   });
 
-client.login('YOUR TOKEN');
+
+client.login('YOUR TOKEN'); // your token
