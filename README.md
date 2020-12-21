@@ -16,7 +16,6 @@ node bot.js
 ```
 Ubuntu
 **if you don't have node js{
-apt install nodejs
 apt install npm
 }**
 git clone https://github.com/Wepted/pogrzeb-kota-discord-bot.git
