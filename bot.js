@@ -15,6 +15,17 @@ client.on('message', async message => {
         message.reply('Nie ma cie na voice chacie');
       }
     }
+
+
+
+    if (message.content === '/stop') {
+
+      for (const connection of client.voice.connections.values()) {
+        connection.disconnect();
+    }
+          
+      }
+
   });
 
-client.login('YOUR TOKEN'); // your token
+client.login('TOKEN'); // your token
