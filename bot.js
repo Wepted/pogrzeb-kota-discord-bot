@@ -3,11 +3,8 @@ const client = new Discord.Client();
 const broadcast = client.voice.createBroadcast();
 broadcast.play('pogrzeb.mp3');
 
-
-
 client.on('message', async message => {
     if (!message.guild) return;
-  
     if (message.content === '/pogrzeb') {
       if (message.member.voice.channel) {
         const connection = await message.member.voice.channel.join();
@@ -19,6 +16,5 @@ client.on('message', async message => {
       }
     }
   });
-
 
 client.login('YOUR TOKEN'); // your token
