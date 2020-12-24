@@ -6,6 +6,7 @@ broadcast.play('pogrzeb.mp3');
 client.on('message', async message => {
     if (!message.guild) return;
     if (message.content === '/pogrzeb') {
+        console.log(`pogrzeb sie zaczal`);
       if (message.member.voice.channel) {
         const connection = await message.member.voice.channel.join();
         for (const connection of client.voice.connections.values()) {
