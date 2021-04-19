@@ -37,6 +37,7 @@ if (message.content === '/pomoc') {
 
         message.reply("/pogrzeb - odprawia pogrzeb");
 	message.reply("/stop - konczy pogrzeb");
+  message.reply("/pingu - ping sprawdza w ms");
 	message.reply("https://cdn.discordapp.com/avatars/790380203296948224/96b25cdbb57b54fb52befca60fe3edfb.webp?size=1024");
 
 
@@ -44,7 +45,12 @@ if (message.content === '/pomoc') {
 
 }
 
+if (message.content === '/pingu') {
+    
+  var ping = Date.now() - message.createdTimestamp + " ms";
+  message.reply("Twoj ping to `" + `${Date.now() - message.createdTimestamp}` + " ms`");
 
+}
 
   });
 
